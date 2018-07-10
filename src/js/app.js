@@ -1,3 +1,4 @@
+import Flickity from 'flickity'
 import lazysizes from 'lazysizes'
 import optimumx from 'lazysizes'
 require('../../node_modules/lazysizes/plugins/object-fit/ls.object-fit.js')
@@ -13,6 +14,7 @@ const App = {
     init: () => {
       App.interact.embedKirby()
       App.interact.linkTargets()
+      console.log()
     },
     linkTargets: () => {
       const links = document.querySelectorAll("a");
